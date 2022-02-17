@@ -6,6 +6,7 @@ from listings.choices import price_choices, bedroom_choices, state_choices
 
 
 def index(request):
+    print('User: ', request.user.username)
     listings = Listing.objects.filter(is_published=True).order_by(
         '-price')[:3]
     context = {
