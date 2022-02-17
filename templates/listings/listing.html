@@ -207,13 +207,13 @@
                         {% endif %}
                         <input type="hidden" name="realtor_email" value="
                         {{ listing.realtor.email }}">
-                        <input type="hidden" name="listing_id" value="
-                        {{ listing.id }}">
+                        <input type="hidden" name="listing_id"
+                               value="{{ listing.id }}">
                         <div class="form-group">
                             <label for="property_name" class="col-form-label">Property:</label>
                             <input type="text" name="listing"
                                    class="form-control"
-                                   value="{{ listing.title }}" disabled>
+                                   value="{{ listing.title }}">
                         </div>
                         <div class="form-group">
                             <label for="name"
